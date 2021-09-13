@@ -22,7 +22,10 @@ volumes:
     mount: /appz/data
     name: data
     size: 5Gi
-    mode: ReadWriteOnce     
+  - claim: postgres-sonar-backup
+    mount: /appz/backup
+    name: backup
+    size: 5Gi     
     
 properties:
     POSTGRESQL_REPLICATION_MODE: master
@@ -39,6 +42,4 @@ properties:
       vault: PGPASSWORD
     SONARUSER_PASSWORD:
       vault: SONARUSER_PASSWORD
-    APPZ_RESTORE_TOKEN: 20210115-1015
-    APPZ_LOAD_TOKEN: 20210115-1015
     revision : 56
