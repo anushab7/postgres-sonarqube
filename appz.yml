@@ -42,4 +42,4 @@ properties:
       vault: PGPASSWORD
     SONARUSER_PASSWORD:
       vault: SONARUSER_PASSWORD
-    revision : 57
+    revision : 58
