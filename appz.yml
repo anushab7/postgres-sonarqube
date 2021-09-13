@@ -40,6 +40,6 @@ properties:
     POSTGRESQL_REP_USER: replica
     PGPASSWORD: 
       vault: PGPASSWORD
-    SONARUSER_PASSWORD:
-      vault: SONARUSER_PASSWORD
+    POSTGRES_SONARUSER_PASSWORD:
+      vault: POSTGRES_SONARUSER_PASSWORD
     revision : 58
